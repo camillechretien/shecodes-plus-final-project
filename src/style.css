@@ -1,0 +1,115 @@
+h1 {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #005689;
+  text-transform: capitalize;
+}
+
+h2 {
+  text-align: right;
+  padding-top: 15px;
+  line-height: 20px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+li {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+li {
+  text-align: right;
+  list-style: none;
+}
+
+body {
+  margin: 50px 100px 50px 100px;
+}
+
+a {
+  color: #007cb9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff895d;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.current-temperature {
+  font-size: 75px;
+  line-height: 68px;
+  padding: 25px 0px 10px 0px;
+  font-weight: 500;
+}
+
+.search {
+  margin-left: 70px;
+  padding-left: 70px;
+  padding-top: 10px;
+}
+
+.card-body {
+  text-align: center;
+  padding-top: 30px;
+}
+.day {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.forecast-temperature {
+  font-size: 22px;
+  padding: 40px 0px 0px 0px;
+}
+
+.date {
+  text-align: left;
+}
+
+.metrics {
+  color: #007cb9;
+  font-size: 22px;
+  font-weight: bolder;
+  padding-left: 10px;
+  line-height: 12px;
+  text-decoration: solid;
+}
+
+.submitCity {
+  background-color: #ff895d;
+  color: #fff;
+  margin-top: 5px;
+  transition: ease-in-out 200ms;
+}
+
+.submitCity:hover {
+  background-color: #005689;
+}
+
+.form-control {
+  border-radius: 25px;
+}
+
+.current-position {
+  color: #ff895d;
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.current-position:hover {
+  color: #005689;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
