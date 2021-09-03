@@ -113,3 +113,8 @@ a:hover {
 .capitalize {
   text-transform: capitalize;
 }
+
+.code{
+  padding-top: 20px;
+  font-size: small;
+}
