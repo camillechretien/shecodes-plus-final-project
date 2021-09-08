@@ -77,10 +77,10 @@ a:hover {
 }
 
 .metrics {
+  position: relative;
   color: #007cb9;
-  font-size: 22px;
-  font-weight: bolder;
-  padding-left: 10px;
+  font-size: 20px;
+  top: -34px;
   line-height: 12px;
   text-decoration: solid;
 }
@@ -114,7 +114,7 @@ a:hover {
   text-transform: capitalize;
 }
 
-.code{
+.code {
   padding-top: 20px;
   font-size: small;
 }
