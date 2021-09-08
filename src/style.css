@@ -44,6 +44,7 @@ a:hover {
   margin: 0 auto;
   margin-top: 50px;
   margin-bottom: 50px;
+  max-width: 1100px;
 }
 
 .search {
@@ -81,7 +82,7 @@ a:hover {
 .submitCity {
   background-color: #ff895d;
   color: #fff;
-  margin-top: 5px;
+  padding: 5px 15px 5px 15px;
   transition: ease-in-out 200ms;
 }
 
