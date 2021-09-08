@@ -121,9 +121,18 @@ a:hover {
 }
 
 .weather-overview strong {
-  font-size: 75px;
+  font-size: 65px;
   line-height: 1;
   padding: 0px;
   font-weight: 400;
   display: inline;
+}
+
+.metrics .active {
+  color: #212529;
+  cursor: default;
+}
+
+.metrics .active:hover {
+  text-decoration: none;
 }
