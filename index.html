@@ -30,10 +30,17 @@
     <div class="container">
       <div class="row">
         <div class="col-6">
-          <h1>Edmonton</h1>
-          <p class="current-temperature" id="current-temperature">
-            ☀️ 20<span class="metrics">°C | °F</span>
-          </p>
+          <h1></h1>
+          <div class="clearfix weather-overview">
+            <img src="" alt="" id="icon" />
+            <div class="float-left">
+              <strong
+                class="current-temperature"
+                id="current-temperature"
+              ></strong>
+              <span class="metrics">°C | <a href="#">°F</a></span>
+            </div>
+          </div>
           <h2 class="date"></h2>
           <p class="capitalize" id="temp-description">Sunny with clouds</p>
           <p>

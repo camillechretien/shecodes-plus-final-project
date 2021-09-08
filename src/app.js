@@ -47,16 +47,23 @@ cityForm.addEventListener("submit", citySearched);
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let temperatureElement = document.querySelector("#current-temperature");
-  temperatureElement.innerHTML = `${temperature}°C`;
   let searchedDesc = response.data.weather[0].description;
   let searchedDescription = document.querySelector("#temp-description");
-  searchedDescription.innerHTML = searchedDesc;
   let searchedW = response.data.wind.speed;
   let searchedWind = document.querySelector("#wind");
-  searchedWind.innerHTML = `Wind speed: ${searchedW} km/h`;
   let searchedHum = response.data.main.humidity;
   let searchedHumidity = document.querySelector("#humidity");
+  let iconElement = document.querySelector("#icon");
+
+  temperatureElement.innerHTML = `${temperature}`;
+  searchedDescription.innerHTML = searchedDesc;
+  searchedWind.innerHTML = `Wind speed: ${searchedW} km/h`;
   searchedHumidity.innerHTML = `Humidity: ${searchedHum}%`;
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 let apiKey = "5b7438cdfc6f92bfe624b6f60dd02829";
@@ -71,18 +78,19 @@ cityForm.addEventListener("submit", axios.get(apiUrl).then(showTemperature));
 function showWeather(response) {
   let cityName = response.data.name;
   let currentCityName = document.querySelector("h1");
-  currentCityName.innerHTML = cityName;
   let cityTemp = Math.round(response.data.main.temp);
   let currentCityTemp = document.querySelector("#current-temperature");
-  currentCityTemp.innerHTML = `${cityTemp}°C`;
   let description = response.data.weather[0].description;
   let currentDescription = document.querySelector("#temp-description");
-  currentDescription.innerHTML = description;
   let wind = response.data.wind.speed;
   let currentWind = document.querySelector("#wind");
-  currentWind.innerHTML = `Wind speed: ${wind} km/h`;
   let humidity = response.data.main.humidity;
   let currentHumidity = document.querySelector("#humidity");
+
+  currentCityName.innerHTML = cityName;
+  currentCityTemp.innerHTML = `${cityTemp}`;
+  currentDescription.innerHTML = description;
+  currentWind.innerHTML = `Wind speed: ${wind} km/h`;
   currentHumidity.innerHTML = `Humidity: ${humidity}%`;
 }
 
