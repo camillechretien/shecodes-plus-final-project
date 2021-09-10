@@ -57,14 +57,22 @@ a:hover {
   text-align: center;
   padding-top: 30px;
 }
-.day {
+.weather-forecast-day {
   font-size: 25px;
   font-weight: 500;
 }
 
 .forecast-temperature {
-  font-size: 22px;
   padding: 40px 0px 0px 0px;
+}
+
+.forecast-temperature-max {
+  font-size: 20px;
+}
+
+.forecast-temperature-min {
+  font-size: 16px;
+  opacity: 0.5;
 }
 
 .date {

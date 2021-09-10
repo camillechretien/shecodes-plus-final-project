@@ -135,3 +135,40 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let celsiusTemperature = null;
+
+//*** Weather forecast
+
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat", "Sun"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+          <div class="col-2">
+            <div class="card">
+              <div class="card-body">
+                <p>
+                  <div class="weather-forecast-day">${day}</div>
+                  <img
+                  src=""
+                  alt=""
+                  width="42"
+                  />
+                  <div class="forecast-temperature"></div>
+                  <span class="forecast-temperature-max">15°C</span>
+                  <span class="forecast-temperature-min">10°C</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          `;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
