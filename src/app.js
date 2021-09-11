@@ -108,6 +108,8 @@ function showWeather(response) {
   currentDescription.innerHTML = description;
   currentWind.innerHTML = `Wind speed: ${wind} km/h`;
   currentHumidity.innerHTML = `Humidity: ${humidity}%`;
+
+  getForecast(response.data.coord);
 }
 
 function retrievePosition(position) {
